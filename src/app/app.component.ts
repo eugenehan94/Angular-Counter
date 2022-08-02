@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-counter';
+  initialCount: number = 0;
+  initialFontSize: number = 24;
 }

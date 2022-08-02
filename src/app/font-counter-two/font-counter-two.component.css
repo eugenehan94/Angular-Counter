@@ -1,0 +1,4 @@
+.inc-dec-button-container, .reset-button-container {
+    display: flex;
+    justify-content: center;
+}

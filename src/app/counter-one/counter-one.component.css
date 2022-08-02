@@ -1,0 +1,12 @@
+.counter {
+    font-size: 30px;
+    font-weight: bold;
+}
+.zero-dashes {
+    margin: 0 1rem;
+}
+.inc-dec-button-container, .reset-button-container {
+    display: flex;
+    justify-content: center;
+}
+

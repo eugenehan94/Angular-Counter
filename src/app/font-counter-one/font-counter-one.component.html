@@ -1,0 +1,15 @@
+<h1 [style.color]="textColour">{{title}}</h1>
+
+<div *ngIf="fontSize >= 0">
+<p [style.fontSize.px]="fontSize">FontSize</p>
+</div>
+<p [style.color]="textColour">{{fontSize}} px</p>
+<div class="inc-dec-button-container">
+<button type="button" (click)="increase(10)">Increase 10px</button>
+<button type="button" (click)="increase(1)">Increase 1px</button>
+<button type="button" (click)="decrease(1)">Decrease 1px</button>
+<button type="button" (click)="decrease(10)">Decrease 10px</button>
+</div>
+<div class="reset-button-container">
+    <button type="button" (click)="restore()">Restore Original</button>
+</div>

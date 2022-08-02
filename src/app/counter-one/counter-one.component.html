@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+
+<!-- style binding present here [style.color] -->
+<p class="counter" [style.color]="numberColour">
+  <span *ngIf="count === 0" class="zero-dashes"> ------- </span>
+  {{ count }}
+  <span *ngIf="count === 0" class="zero-dashes"> ------- </span>
+</p>
+
+<div class="inc-dec-button-container">
+<button type="button" (click)="increase(10)">Increase 10</button>
+<button type="button" (click)="increase(1)">Increase 1</button>
+<button type="button" (click)="decrease(1)">Decrease 1</button>
+<button type="button" (click)="decrease(10)">Decrease 10</button>
+</div>
+<div class="reset-button-container">
+  <button type="button" (click)="reset(10)">Reset to 10</button>  
+  <button type="button" (click)="reset(0)">Reset to Zero</button>
+  <button type="button" (click)="reset(-10)">Reset to -10</button>
+</div>
+
+<!-- When the numberColour is zero, the default colour (black) is shown -->
+<div *ngIf="numberColour === 'green'">
+  <p>*** You are in the positive number *** </p>
+</div>
+<div *ngIf="numberColour === 'red'">
+  <p>*** You are in the negative number ***</p>
+</div>

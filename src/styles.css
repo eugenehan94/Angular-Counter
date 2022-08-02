@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+h1, h2, h3, h4, p {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background-color: rgb(39, 255, 39);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(4, 118, 4);
+    color: rgb(255, 255, 255);
+    transition: ease 0.5s;
+}

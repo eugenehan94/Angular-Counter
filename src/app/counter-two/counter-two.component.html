@@ -1,0 +1,19 @@
+<h1>{{title}}&nbsp;<span [style.color]="numberColour">(Two Way Binding)</span></h1>
+
+<p class="counter" [style.color]="numberColour">
+  <span *ngIf="number === 0" class="zero-dashes"> ===== </span>
+  {{ number }}
+  <span *ngIf="number === 0" class="zero-dashes"> ===== </span>
+</p>
+
+<div class="inc-dec-button-container">
+    <button type="button" (click)="increase(10)">Increase 10</button>
+    <button type="button" (click)="increase(1)">Increase 1</button>
+    <button type="button" (click)="decrease(1)">Decrease 1</button>
+    <button type="button" (click)="decrease(10)">Decrease 10</button>
+</div>
+<div class="reset-button-container">
+  <button type="button" (click)="reset(10)">Reset to 10</button>  
+  <button type="button" (click)="reset(0)">Reset to Zero</button>
+  <button type="button" (click)="reset(-10)">Reset to -10</button>
+</div>

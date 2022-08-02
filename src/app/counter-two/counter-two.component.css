@@ -1,0 +1,11 @@
+.counter {
+    font-size: 30px;
+    font-weight: bold;
+}
+.inc-dec-button-container, .reset-button-container {
+    display: flex;
+    justify-content: center;
+}
+.zero-dashes {
+    margin: 0rem 1rem;
+}
